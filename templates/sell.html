@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+    Sell
+{% endblock %}
+{% block main %}
+    <form   action="/sell" method="POST" >
+     <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="sellsymbol" name="sellsymbol" placeholder="Enter symbol" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="shares" name="numberssold" placeholder="number-shares-to-sell" type="number">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Enter</button>
+
+    </form>
+{% endblock %}
